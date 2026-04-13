@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
+
+<title>to my favorite person 🌟</title>
+<link rel="icon" href="https://i.ibb.co.com/hXZsYxZ/heart.png">
+
+<style>
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+}
+
+body{
+  font-family:'Poppins',sans-serif;
+  overflow:hidden;
+  color:#4b5563;
+}
+
+.page{
+  height:100vh;
+  width:100vw;
+  position:absolute;
+  top:0;
+  left:0;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  padding:20px;
+  opacity:0;
+  pointer-events:none;
+  transition:opacity 1s ease;
+  background:linear-gradient(to bottom, #FFDCE3, #E3F1FE);
+}
+
+.page.active{
+  opacity:1;
+  pointer-events:auto;
+}
+
+img{
+  max-width:80vw;
+  max-height:45vh;
+  margin-bottom:20px;
+}
+
+h1,h2{
+  color:#374151;
+  margin-bottom:12px;
+}
+
+h1{font-size:2.1rem;}
+h2{font-size:1.7rem;}
+
+p{
+  font-size:1rem;
+  line-height:1.6;
+}
+
+.button{
+  background:#374151;
+  color:white;
+  border:none;
+  border-radius:25px;
+  padding:14px 28px;
+  font-size:1.05rem;
+  margin-top:25px;
+  cursor:pointer;
+}
+
+.button:hover{
+  background:#6b7280;
+}
+
+.page-title{
+  font-size:1rem;
+  max-width:90%;
+  line-height:1.6;
+}
+
+.letter{
+  white-space:pre-line;
+  max-width:90%;
+  max-height:45vh;
+  overflow-y:auto;
+  text-align:left;
+  font-size:1rem;
+  line-height:1.65;
+  border-left:3px solid #6b7280;
+  padding-left:15px;
+  margin-top:20px;
+}
+
+/* falling emoji */
+.falling{
+  position:fixed;
+  top:-30px;
+  font-size:22px;
+  pointer-events:none;
+  z-index:9999;
+  animation:fall linear forwards;
+}
+
+/* jiggle */
+@keyframes floatSoft {
+  0% {transform: translateY(0);}
+  50% {transform: translateY(-6px);}
+  100% {transform: translateY(0);}
+}
+
+@keyframes jiggleSoft {
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(-4px); }
+  100% { transform: translateY(0); }
+}
+
+
+.page img{
+  margin-bottom:20px;
+  border-radius:10px;
+  animation: jiggleSoft 3s ease-in-out infinite;
+}
+
+.image-row img{
+  border-radius:8px;
+  animation: jiggleSoft 3.5s ease-in-out infinite;
+}
+
+.page img,
+.image-row{
+  display:flex;
+  justify-content:center;
+  gap:12px;
+  margin-bottom:14px;
+}
+
+.page img{
+  margin-bottom:20px;
+}
+
+.page img{
+  margin-bottom:20px;
+  border-radius:10px;  
+}
+
+.image-row img{
+  border-radius:8px;   
+}
+
+
+
+@media (max-width: 480px){
+  .image-row{
+    gap:8px;
+    margin-bottom:10px;
+  }
+
+  .image-row img{
+    width:120px;  
+  }
+}
+
+
+@keyframes fall{
+  to{
+    transform:translateY(110vh);
+    opacity:0;
+  }
+}
+
+.watermark{
+  position:fixed;
+  right:14px;
+  bottom:18px;
+  display:flex;
+  align-items:center;
+  gap:6px;
+  background:transparent;
+  padding:0;
+  z-index:9999;
+
+  animation: popUpSoft 4.5s ease-in-out infinite;
+}
+
+.watermark img{
+  width:32px;         
+  height:32px;
+  border-radius:50%;
+  object-fit:cover;
+}
+
+.watermark span{
+  font-size:0.75rem;  
+  color:#374151;
+  font-weight:600;
+  font-style:italic;
+  line-height:1.1;
+  white-space:pre-line;
+}
+
+.watermark{
+  font-family:'Gluten', cursive;
+}
+
+@media (max-width: 480px){
+  .watermark{
+    right:12px;
+    bottom:14px;
+    gap:5px;
+  }
+
+  .watermark img{
+    width:28px;
+    height:28px;
+  }
+
+  .watermark span{
+    font-size:0.7rem;
+  }
+}
+
+.watermark{
+  pointer-events:none;
+}
+
+@keyframes popUpSoft {
+  0% {
+    opacity:0;
+    transform: scale(0.85) translateY(6px);
+  }
+
+  20% {
+    opacity:1;
+    transform: scale(1) translateY(0);
+  }
+
+  70% {
+    opacity:1;
+    transform: scale(1) translateY(0);
+  }
+
+  100% {
+    opacity:0;
+    transform: scale(0.85) translateY(6px);
+  }
+}
+
+
+
+@media(max-width:600px){
+  h1{font-size:1.7rem;}
+  h2{font-size:1.4rem;}
+  p{font-size:0.95rem;}
+  .button{font-size:0.95rem;padding:12px 22px;}
+  .letter{font-size:0.95rem;}
+}
+</style>
+<link href="https://fonts.googleapis.com/css2?family=Gluten:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="watermark">
+  <img src="cat.png">
+  <span>
+  
+</div>
+
+
+<div class="page active" id="page1">
+  <img src="1.gif">
+  <h1>HAPPYY BIRTHDAYY <br>GANTENGKUU SAYANGG!! ૮₍ ˶ᵔ ᵕ ᵔ˶ ₎ა</h1>
+  <p>there’s more waiting… click to find out ✨</p>
+  <button class="button" onclick="goToPage(2)">tap ‹𝟹</button>
+</div>
+
+<div class="page" id="page2">
+  <img src="2.gif">
+  <p>sayangg udah berusaha lebih baik untuk setiap tahunnya yaa. <br>sayangkuu kerenn cekaliee, happy birthday sayanggg 🤍</p>
+  <button class="button" onclick="goToPage(3)">open it ‹𝟹</button>
+</div>
+
+<div class="page" id="page3">
+  <img src="3.gif">
+  <p>makin tambah umur makin gantengg aja nii pacarkuuuu, nda adil ihh</p>
+  <button class="button" onclick="goToPage(4)"> ‹𝟹</button>
+</div>
+
+<div class="page" id="page4">
+  <img src="4.gif">
+  <p>okii inii terakhir gantengkuu, aku buatin sesuatuu untuk birthday nyaa sayangg, <br>dibaca pelan pelan aja yaa sayangkuu 🎂</p>
+  <button class="button" onclick="goToPage(5)">okaay ‹𝟹</button>
+</div>
+
+<div class="page" id="page5">
+  <img src="1.jpg">
+  <h1 class="page-title">sayangg pantas dapetin semua cinta di dunia hari ini dan selamanyaa, <br>happy birthday, cintakuu 🤍</h1>
+  <p>timaaci sayangg udah jadi bagian terbaikkuu &lt;3</p>
+  <button class="button" onclick="goToPage(6)">open this (♡˙ᵕ˙♡)</button>
+</div>
+
+<div class="page" id="page6">
+  <div class="image-row">
+    <img src="2.jpg">
+    <img src="22.jpg">
+  </div>
+  <h1 class="page-title">
+    setiap tahun, sayang semakin bijak, semakin baik hati sama semua orangg, dan semakin luar biasa. <br>happy birthday, my boy ♡
+  </h1>
+  <p>kalau ditanya apa yang paling indah hari ini? jawabanku kamu, sayang.</p>
+  <button class="button" onclick="goToPage(7)">♡</button>
+</div>
+
+<div class="page" id="page7">
+  <img src="3.jpg">
+  <h1 class="page-title">akuu selaluu sayangg ke sayang setiap hari nya dan akan bertambah teruss sayangg, <br>aku gaakan pernah bosen ke sayangg 🥹🥹🤍🤍</h1>
+  <p>it’s your day, sayangg. dibaca pelan ajaa, aku punya surat kecil buat bubbieee 🎂</p>
+  <button class="button" onclick="goToPage(8)">♡</button>
+</div>
+
+<div class="page" id="page8"> <h2>HAPPYY <br>BIRTHDAYY GANTENGKU <br>SAYANGG ૮꒰ ྀི >⸝⸝⸝< ྀི꒱ა</h2> <div class="letter" id="letterText"></div> </div>
+
+
+<audio id="bg-music" src="Party.mp3" loop></audio>
+
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
+<script>
+const music=document.getElementById("bg-music");
+
+const fullLetter = `it’s your special day, sayangg 💐
+wish u all the best, bubbiee 🤍
+maacii sayangg udaa lahir ke dunia ini dan jadi pasanganku.
+selamat bertumbuh jadi versi sayang yang lebih baik setiap harinya, sayangku, cintaku.
+panjang umur dan sehat selalu yaa sayangg, biar kita bisa terus bareng 🥹💗
+
+harapan akuu di hari ulang tahun sayangg,
+apapun yang sayang minta, cari, dan harapkan,
+semoga satu per satu terwujud, hari ini dan seterusnya 🤍
+
+semoga tuhan mengabulkan hal-hal baik yang benar-benar diinginkan hati sayangg.
+makasii yaa sayangg, udah nerima aku dengan semua kekuranganku 🥹💗
+
+sayangg pantas dapetin yang lebih baik,
+sayangg berharga, dan aku nggak pernah malu punya sayangg.
+aku justru pengen pamer ke dunia,
+karena aku punya sayangg
+(๑ > ᴗ <๑)♡
+
+terkadang memang cuma diri sendiri yang bisa diandalkan,
+tapi jangan pernah ngerasa sendirian yaa sayangg.
+ada banyak orang yang sayang sama kamu,
+dan ada aku juga, selalu 🤍
+aku juga minta maaf yaa sayangg,
+kalau selama ini belum bisa jadi pendengar yang baik.
+but i’ll try, sayang.
+
+semoga hal baik selalu beriringan sama sayang,
+semoga semesta selalu berpihak,
+dan langkah-langkah sayangg selalu dimudahkan.
+terus tumbuh, terus melangkah, dan terus berbahagia yaa sayangg 🫶🏻🤍
+
+aku akan selalu bangga dan support sayangg,
+atas semua proses yang udah sayang lewatin.
+sayangg hebat, berharga, dan kuat setiap harinya 🤍
+
+happy 17 years old, sayangg 💐
+aku akan selalu ada buat sayang,
+di setiap proses, di setiap hari,
+aku selalu sama sayangg 💗💗
+
+—from ur pretty girlfriend 🧸`;
+
+window.addEventListener("click",()=>{
+  if(music.paused){
+    music.play();
+  }
+},{once:true});
+
+/* 🎀 FALLING FROM START */
+startFalling();
+
+function goToPage(n){
+  document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));
+  document.getElementById(`page${n}`).classList.add('active');
+
+  if(n===8){
+    confetti({particleCount:150,spread:100,origin:{y:0.6}});
+    typeText(fullLetter,document.getElementById("letterText"),45);
+  }
+}
+
+function typeText(text,el,speed){
+  el.innerHTML='';
+  let i=0;
+  function t(){
+    if(i<text.length){
+      el.innerHTML+=text.charAt(i);
+      el.scrollTop=el.scrollHeight;
+      i++;
+      setTimeout(t,speed);
+    }
+  }
+  t();
+}
+
+function startFalling(){
+  setInterval(()=>{
+    const d=document.createElement("div");
+    d.className="falling";
+    d.innerText=["🧸","🎀","💗"][Math.floor(Math.random()*3)];
+    d.style.left=Math.random()*100+'vw';
+    d.style.animationDuration=(4+Math.random()*2)+'s';
+    document.body.appendChild(d);
+    setTimeout(()=>d.remove(),7000);
+  },320);
+}
+</script>
+
+</body>
+</html>
+</body>
+</html>
